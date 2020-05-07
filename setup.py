@@ -38,7 +38,7 @@ Operating System :: Unix
 """
 
 setup(
-    name='pgeocode',
+    name='pgeocode-ls',
     description='Approximate geocoding',
     long_description=open('README.rst').read(),
     version=find_version("pgeocode.py"),
