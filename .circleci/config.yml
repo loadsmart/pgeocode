@@ -8,7 +8,7 @@ commands:
     steps:
       - run:
           command: |
-            sudo pip install -r requirments.txt
+            sudo pip install -r requirements.txt
 
 jobs:
   deploy:
