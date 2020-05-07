@@ -1,0 +1,34 @@
+version: 2.1
+
+orbs:
+  codecov: codecov/codecov@1.0.5
+
+commands:
+  install-dependencies:
+    steps:
+      - run:
+          command: |
+            sudo pip install -r requirements.txt
+
+jobs:
+  deploy:
+      docker:
+        - image: circleci/python:3.6-stretch
+      steps:
+        - checkout
+        - install-dependencies
+        - run:
+            name: Dist
+            command: make dist
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - deploy:
+          context: org-global
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^\d+\.\d+\.\d+$/
