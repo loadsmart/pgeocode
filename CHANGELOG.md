@@ -1,5 +1,12 @@
 # Release notes
 
+## Version 0.2.2 (LoadSmart)
+
+*May 7, 2020*
+
+- Fixed URL of countries.
+- Renamed library: 
+
 ## Version 0.2.1
 
 *February 21, 2019*
