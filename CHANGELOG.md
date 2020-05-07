@@ -7,7 +7,7 @@
 - Fixed URL of countries.
 - Renamed library: 
 
-## Version 0.2.1
+## Version 0.2.3
 
 *February 21, 2019*
 
